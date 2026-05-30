@@ -4,9 +4,7 @@
 
 1. Спроектируйте to be архитектуру КиноБездны, разделив всю систему на отдельные домены и организовав интеграционное взаимодействие и единую точку вызова сервисов.
 Результат представьте в виде контейнерной диаграммы в нотации С4.
-Добавьте ссылку на файл в этот шаблон
-
-[ссылка на файл](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/diagrams/C4-components.svg)
+Добавьте ссылку на файл в этот шаблон [ссылка на файл](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/diagrams/C4-components.svg)
 
 
 ## Задание 2
