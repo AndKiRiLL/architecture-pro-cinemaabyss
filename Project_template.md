@@ -354,6 +354,14 @@ https://cinemaabyss.example.com/api/movies
 и приложите скриншот развертывания helm и вывода https://cinemaabyss.example.com/api/movies
 
 
+* [Скриншот развертывания helm](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/helm-deployed.png)
+
+Так как маршрут /api/movies не был прописан, то первый скрин ответа api с ошибкой. На втором я добавил маршрут /api/movies в ответ пришли фильмы.
+
+* [Скриншот вывода /api/movies с ошибкой](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/hemp-deploy-response-api.png)
+* [Скриншот вывода /api/movies с настроенным маршрутом](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/helm-deploy-response-add-route.png)
+
+
 # Задание 5
 Компания планирует активно развиваться и для повышения надежности, безопасности, реализации сетевых паттернов типа Circuit Breaker и канареечного деплоя вам как архитектору необходимо развернуть istio и настроить circuit breaker для monolith и movies сервисов.
 
