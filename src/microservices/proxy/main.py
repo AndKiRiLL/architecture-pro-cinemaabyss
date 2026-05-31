@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI()
 
+
 # --- Конфигурация из переменных окружения ---
 MONOLITH_URL = os.getenv("MONOLITH_URL", "http://monolith:8080")
 MOVIES_SERVICE_URL = os.getenv("MOVIES_SERVICE_URL", "http://movies-service:8081")
