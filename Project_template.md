@@ -4,8 +4,7 @@
 
 1. Спроектируйте to be архитектуру КиноБездны, разделив всю систему на отдельные домены и организовав интеграционное взаимодействие и единую точку вызова сервисов.
 Результат представьте в виде контейнерной диаграммы в нотации С4.
-Добавьте ссылку на файл в этот шаблон
-[ссылка на файл](ссылка)
+Добавьте ссылку на файл в этот шаблон [ссылка на файл](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/diagrams/C4-components.svg)
 
 
 ## Задание 2
@@ -59,6 +58,8 @@
 Необходимые тесты для проверки этого API вызываются при запуске npm run test:local из папки tests/postman 
 Приложите скриншот тестов и скриншот состояния топиков Kafka http://localhost:8090 
 
+* [Скриншот тестов](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/test-local-node.png)
+* [Скриншот состояния топиков Kafka](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/kafka-topics.png)
 
 ## Задание 3
 
@@ -274,6 +275,9 @@ cat .docker/config.json | base64
 #### Шаг 3
 Добавьте сюда скриншота вывода при вызове https://cinemaabyss.example.com/api/movies и  скриншот вывода event-service после вызова тестов.
 
+* [Скриншота вывода api](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/get-movies.png)
+* [Скриншот вывода event-service](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/tests-kubernetes.png)
+
 
 ## Задание 4
 Для простоты дальнейшего обновления и развертывания вам как архитектуру необходимо так же реализовать helm-чарты для прокси-сервиса и проверить работу 
@@ -350,6 +354,14 @@ https://cinemaabyss.example.com/api/movies
 и приложите скриншот развертывания helm и вывода https://cinemaabyss.example.com/api/movies
 
 
+* [Скриншот развертывания helm](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/helm-deployed.png)
+
+Так как маршрут /api/movies не был прописан, то первый скрин ответа api с ошибкой. На втором я добавил маршрут /api/movies в ответ пришли фильмы.
+
+* [Скриншот вывода /api/movies с ошибкой](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/hemp-deploy-response-api.png)
+* [Скриншот вывода /api/movies с настроенным маршрутом](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/helm-deploy-response-add-route.png)
+
+
 # Задание 5
 Компания планирует активно развиваться и для повышения надежности, безопасности, реализации сетевых паттернов типа Circuit Breaker и канареечного деплоя вам как архитектору необходимо развернуть istio и настроить circuit breaker для monolith и movies сервисов.
 
@@ -414,6 +426,8 @@ You can see 21 for the upstream_rq_pending_overflow value which means 21 calls s
 ```
 
 Приложите скриншот работы circuit breaker'а
+
+* [Скриншот работы circuit breaker](https://github.com/AndKiRiLL/architecture-pro-cinemaabyss/blob/cinema/screenshots/work-circuit-breaker.png)
 
 Удаляем все
 ```bash
